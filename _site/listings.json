@@ -1,0 +1,19 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2021-07-14-Starbucks-Optimising-Customer-Segmentation-with-Random-Forest-and-Gradient-Boosting.html",
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html",
+      "/posts/pumpkins_knime/a_year_of_pumpkins.html",
+      "/posts/2021-07-01-logistic-regression-using-breast-cancer-dataset.html",
+      "/posts/2021-06-17-a-data-science-resume-guide.html",
+      "/posts/2021-06-08-of-pipelines-cross-validation-and-hyperparameter-tuning-a-tutorial-using-scikit-learn-part-2.html",
+      "/posts/2021-06-01-of-pipelines-cross-validation-and-hyperparameter-tuning-a-tutorial-using-scikit-learn-part-1.html",
+      "/posts/2021-05-21-linear-regression-walkthrough-with-seoul-bike-sharing-dataset-and-google-colab.html",
+      "/posts/2021-02-28-how-to-get-into-data-science-data-analytics.html",
+      "/posts/2021-01-21-data-science-vs-data-analytics.html",
+      "/posts/2021-01-01-An-Introduction-to-Data-Science.html"
+    ]
+  }
+]

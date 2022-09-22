@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "posts/pumpkins_knime/a_year_of_pumpkins.html",
+    "href": "posts/pumpkins_knime/a_year_of_pumpkins.html",
+    "title": "A Year of Pumpkins: Regression Analysis with Pumpkin prices and KNIME Analytics platform",
+    "section": "",
+    "text": "The dataset is actually made up of multiple datasets, each for a separate city. Using the CSV Reader node, all 13 files could be read at once. However, because some of the files had more columns, an option to catch the error had to be relaxed. The columns are as below:\n\nThe last 4, are not in most of the other csv files, and so had to be removed using the Column Filter node. Other columns with no valuable information were also removed, as well as those with over 40% missing values with Missing Value Column Filter node.\nColumn Date was transformed into datetime, using Pandas. Knime can integrate python (and other languages including R and Java). The date was then used to access, using dt, week, month and week information which might be useful in determining price levels. Also the average price was calculated from low and high for the day.\n\nThe linear regression is a base line to benchmark the performance. The data was split 70:30 using the Partitioning node, and a Linear Regression Learner and Linear Regression Predictor were used to train and predict on the test set. The regression was run on 11 columns.\n\nResults of the linear regression, including R-squared for model fit and RMSE for performance.\nLinear correlation was used to remove corelated features. 2 columns were removed and training and predict done.\n\nRemoving the correlated features resulted in a slight improvement in the RMSE, falling to 41.293 from 42.04.\n Whole workflow\nOther ideas to explore: 1. H2o regression and tree regression - to explore feature importances 2. Regularisation methods for regresssion - LASSO, Ridge 3. SVM 4. Packaging - there are different packages measurements, see if they can be standardised. 5. Visualisations"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog",
+    "section": "",
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 22, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 19, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nknime\n\n\nlinear regression\n\n\nlow-code\n\n\n\n\nPredicting the average prices of pumpkins in American cities using Linear Regression and Knime Analytics\n\n\n\n\n\n\nJan 5, 2022\n\n\nLeonard Mutambanengwe\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArthur Danda introduces classification using the popular breast cancer dataset\n\n\n\n\n\n\nJul 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmarkdown\n\n\n\n\nHenrica Makulu writes on data science resumes..\n\n\n\n\n\n\nJun 17, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDivine Saungweme explores pipelines, cv and hyperparameter tuning in SKLearn.\n\n\n\n\n\n\nJun 8, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDivine Saungweme explores pipelines, cv and hyperparameter tuning in SKLearn.\n\n\n\n\n\n\nJun 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLINEAR REGRESSION TUTORIAL BY RUVIMBO MAMBINGE\n\n\n\n\n\n\nMay 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmarkdown\n\n\n\n\nHenrica Makulu discusses how one can start their data journey..\n\n\n\n\n\n\nFeb 28, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmarkdown\n\n\n\n\nHenrica Makulu writes on the difference between data science and data analytics\n\n\n\n\n\n\nJan 21, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmarkdown\n\n\n\n\nLeo Dzingirai breaks down what data science is to get you started on your journey…\n\n\n\n\n\n\nJan 1, 2021\n\n\n\n\n\n\nNo matching items"
+  }
+]
